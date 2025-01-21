@@ -16,7 +16,7 @@ namespace ReBorton_TMB.IO
         /// </summary>
         public class InitialData
         {
-            public Tulajdonos Tulajdonos { get; set; }
+            public Tulajdonos? Tulajdonos { get; set; }
             // Egyéb mezők is lehetnek, pl. Börtönőrök, Rabok, Cellák, ha úgy akarjuk,
             // de a Tulajdonos konstruktora maga is létrehozza a Borton-t.
         }
@@ -45,7 +45,7 @@ namespace ReBorton_TMB.IO
                 string jsonContent = File.ReadAllText(filePath);
                 var initialData = JsonSerializer.Deserialize<InitialData>(jsonContent,
                     new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-                return initialData;
+                return initialData!;
             }
             catch (Exception ex)
             {

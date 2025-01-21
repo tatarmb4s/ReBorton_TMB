@@ -49,7 +49,7 @@ namespace Borton_Lib.Classes
         /// <returns>Borton vagy null, ha nincs</returns>
         public Borton KeresBorton(string nev)
         {
-            return bortonLista.FirstOrDefault(x => x.Nev == nev);
+            return bortonLista.FirstOrDefault(x => x.Nev == nev)!;
         }
 
         /// <summary>
@@ -77,31 +77,31 @@ namespace Borton_Lib.Classes
                     foreach (var bAdat in adat.Bortonok)
                     {
                         // Tulajdonos
-                        maxIdFound = System.Math.Max(maxIdFound, bAdat.Tulajdonos.ID);
+                        maxIdFound = System.Math.Max(maxIdFound, bAdat.Tulajdonos!.ID);
                         var tulaj = new Tulajdonos(
                             bAdat.Tulajdonos.ID,
-                            bAdat.Tulajdonos.Nev,
+                            bAdat.Tulajdonos.Nev!,
                             bAdat.Tulajdonos.Neme,
                             null
                         );
-                        var bObj = new Borton(bAdat.Nev, tulaj);
+                        var bObj = new Borton(bAdat.Nev!, tulaj);
                         typeof(Tulajdonos).GetProperty("Borton")
                             ?.SetValue(tulaj, bObj);
 
                         // Cellák
-                        foreach (var cAdat in bAdat.Cellak)
+                        foreach (var cAdat in bAdat.Cellak!)
                         {
-                            var cellObj = new Cell(cAdat.CellID);
+                            var cellObj = new Cell(cAdat.CellID!);
                             bObj.AddCell(cellObj);
 
                             // Rabok
-                            foreach (var rAdat in cAdat.Rabok)
+                            foreach (var rAdat in cAdat.Rabok!)
                             {
                                 maxIdFound = System.Math.Max(maxIdFound, rAdat.ID);
 
                                 var rabObj = new Rab(
                                     rAdat.ID,
-                                    rAdat.Nev,
+                                    rAdat.Nev!,
                                     rAdat.Neme,
                                     rAdat.Buntetes,
                                     rAdat.Allapot,
@@ -116,13 +116,13 @@ namespace Borton_Lib.Classes
                         }
 
                         // Börtönőrök
-                        foreach (var oAdat in bAdat.Bortonorok)
+                        foreach (var oAdat in bAdat.Bortonorok!)
                         {
                             maxIdFound = System.Math.Max(maxIdFound, oAdat.ID);
 
                             var orObj = new Bortonor(
                                 oAdat.ID,
-                                oAdat.Nev,
+                                oAdat.Nev!,
                                 oAdat.Neme,
                                 oAdat.Beosztas,
                                 bObj
@@ -215,38 +215,38 @@ namespace Borton_Lib.Classes
         }
     }
 
-    #region Helper DTO-k
+    #region Helper DTO-k (Data Transfer Object)
 
     internal class BortonAdat
     {
-        public List<BortonDTO> Bortonok { get; set; }
+        public List<BortonDTO>? Bortonok { get; set; }
     }
 
     internal class BortonDTO
     {
-        public string Nev { get; set; }
-        public TulajdonosDTO Tulajdonos { get; set; }
-        public List<CellDTO> Cellak { get; set; }
-        public List<BortonorDTO> Bortonorok { get; set; }
+        public string? Nev { get; set; }
+        public TulajdonosDTO? Tulajdonos { get; set; }
+        public List<CellDTO>? Cellak { get; set; }
+        public List<BortonorDTO>? Bortonorok { get; set; }
     }
 
     internal class TulajdonosDTO
     {
         public int ID { get; set; }
-        public string Nev { get; set; }
+        public string? Nev { get; set; }
         public Borton_Lib.Enums.Neme Neme { get; set; }
     }
 
     internal class CellDTO
     {
-        public string CellID { get; set; }
-        public List<RabDTO> Rabok { get; set; }
+        public string? CellID { get; set; }
+        public List<RabDTO>? Rabok { get; set; }
     }
 
     internal class RabDTO
     {
         public int ID { get; set; }
-        public string Nev { get; set; }
+        public string? Nev { get; set; }
         public Borton_Lib.Enums.Neme Neme { get; set; }
         public Borton_Lib.Enums.BuntetesTipus Buntetes { get; set; }
         public Borton_Lib.Enums.Allapot Allapot { get; set; }
@@ -256,7 +256,7 @@ namespace Borton_Lib.Classes
     internal class BortonorDTO
     {
         public int ID { get; set; }
-        public string Nev { get; set; }
+        public string? Nev { get; set; }
         public Borton_Lib.Enums.Neme Neme { get; set; }
         public Borton_Lib.Enums.Beosztas Beosztas { get; set; }
     }

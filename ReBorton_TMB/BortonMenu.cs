@@ -611,7 +611,7 @@ namespace ReBorton_TMB
         {
             while (true)
             {
-                string inp = Console.ReadLine();
+                string inp = Console.ReadLine()!;
                 if (!string.IsNullOrWhiteSpace(inp))
                 {
                     return inp;
