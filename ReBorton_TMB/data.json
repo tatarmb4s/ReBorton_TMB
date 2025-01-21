@@ -9,6 +9,136 @@
       },
       "Cellak": [],
       "Bortonorok": []
+    },
+    {
+      "Nev": "Csillag",
+      "Tulajdonos": {
+        "ID": 3,
+        "Nev": "Az Allam",
+        "Neme": 1
+      },
+      "Cellak": [
+        {
+          "CellID": "Noi \u00E9letfogytiglanosok",
+          "Rabok": [
+            {
+              "ID": 7,
+              "Nev": "Kund Abig\u00E9l",
+              "Neme": 1,
+              "Buntetes": 0,
+              "Allapot": 0,
+              "MegveresekSzama": 0
+            },
+            {
+              "ID": 8,
+              "Nev": "V\u00F6r\u00F6s R\u00E9b\u00E9k",
+              "Neme": 1,
+              "Buntetes": 0,
+              "Allapot": 0,
+              "MegveresekSzama": 0
+            }
+          ]
+        },
+        {
+          "CellID": "F\u00E9rfi hal\u00E1lb\u00FCntet\u00E9sesek",
+          "Rabok": [
+            {
+              "ID": 9,
+              "Nev": "V. L\u00E1szl\u00F3",
+              "Neme": 0,
+              "Buntetes": 0,
+              "Allapot": 0,
+              "MegveresekSzama": 0
+            },
+            {
+              "ID": 10,
+              "Nev": "M\u00E1rton Ali papja",
+              "Neme": 0,
+              "Buntetes": 0,
+              "Allapot": 0,
+              "MegveresekSzama": 0
+            }
+          ]
+        },
+        {
+          "CellID": "Noi \u00E9letfogytosok",
+          "Rabok": [
+            {
+              "ID": 11,
+              "Nev": "Agnes Asszony",
+              "Neme": 1,
+              "Buntetes": 1,
+              "Allapot": 0,
+              "MegveresekSzama": 0
+            },
+            {
+              "ID": 15,
+              "Nev": "Sink\u00F3 Terra",
+              "Neme": 1,
+              "Buntetes": 1,
+              "Allapot": 0,
+              "MegveresekSzama": 0
+            }
+          ]
+        },
+        {
+          "CellID": "F\u00E9rfi \u00E9letfogytosoj",
+          "Rabok": [
+            {
+              "ID": 13,
+              "Nev": "Tar Lorincz",
+              "Neme": 0,
+              "Buntetes": 1,
+              "Allapot": 0,
+              "MegveresekSzama": 0
+            },
+            {
+              "ID": 14,
+              "Nev": "Ali pasa",
+              "Neme": 0,
+              "Buntetes": 1,
+              "Allapot": 0,
+              "MegveresekSzama": 0
+            }
+          ]
+        },
+        {
+          "CellID": "kinyirand\u00F3k",
+          "Rabok": []
+        }
+      ],
+      "Bortonorok": [
+        {
+          "ID": 6,
+          "Nev": "Arany J\u00E1nos",
+          "Neme": 0,
+          "Beosztas": 1
+        },
+        {
+          "ID": 16,
+          "Nev": "Toldi Mikl\u00F3s",
+          "Neme": 0,
+          "Beosztas": 1
+        },
+        {
+          "ID": 17,
+          "Nev": "Barczi Beno",
+          "Neme": 0,
+          "Beosztas": 2
+        },
+        {
+          "ID": 18,
+          "Nev": "P\u00F6rge Dani",
+          "Neme": 0,
+          "Beosztas": 0
+        },
+        {
+          "ID": 19,
+          "Nev": "Rozgonyi Piroska",
+          "Neme": 1,
+          "Beosztas": 1
+        }
+      ]
     }
   ]
 }

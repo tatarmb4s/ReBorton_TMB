@@ -99,6 +99,7 @@ namespace Borton_Lib.Classes
 
             // Állítsuk a rab Cell property-jét is, és mivel még nem használtam reflectiont, itt az ideje elkezdeni:
             rab.GetType().GetProperty("Cell")?.SetValue(rab, this);
+
         }
 
         /// <summary>

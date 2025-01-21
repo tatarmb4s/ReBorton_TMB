@@ -11,4 +11,10 @@
     <ProjectReference Include="..\Borton_Lib\Borton_Lib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="data.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
