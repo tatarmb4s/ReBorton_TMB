@@ -82,7 +82,7 @@ namespace Borton_Lib.Classes
                             bAdat.Tulajdonos.ID,
                             bAdat.Tulajdonos.Nev!,
                             bAdat.Tulajdonos.Neme,
-                            null
+                            null!
                         );
                         var bObj = new Borton(bAdat.Nev!, tulaj);
                         typeof(Tulajdonos).GetProperty("Borton")

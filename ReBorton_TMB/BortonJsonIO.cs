@@ -34,7 +34,7 @@ namespace ReBorton_TMB.IO
                 {
                     // Ha a fájl nem létezik, visszaadunk egy defaultot, vagy dobunk kivételt.
                     Console.WriteLine("[FIGYELMEZTETÉS] A JSON fájl nem található, üres adatokat hozunk létre!");
-                    var dummyBorton = new Borton("AlapBorton", null);
+                    var dummyBorton = new Borton("AlapBorton", null!);
 
                     return new InitialData
                     {
@@ -51,7 +51,7 @@ namespace ReBorton_TMB.IO
             {
                 Console.WriteLine("[HIBA] Nem sikerült betölteni a kezdeti adatokat: " + ex.Message);
                 // Ha hiba van, generáljunk valami alapértelmezettet
-                var dummyBorton = new Borton("AlapBorton", null);
+                var dummyBorton = new Borton("AlapBorton", null!);
 
                 return new InitialData
                 {

@@ -172,7 +172,7 @@ namespace ReBorton_TMB
             if (chosenNeme == -1) return; // ESC => visszalépés
             Neme n = (chosenNeme == 0) ? Neme.Ferfi : Neme.No;
 
-            var dummyBorton = new Borton(nev, null);
+            var dummyBorton = new Borton(nev, null!);
             var tulaj = new Tulajdonos(tid, tnev, n, dummyBorton);
 
             typeof(Borton).GetField("tulajdonos",
@@ -391,7 +391,7 @@ namespace ReBorton_TMB
             if (chosenBunt == -1) return;
             BuntetesTipus bt = (chosenBunt == 0) ? BuntetesTipus.Halalbuntetes : BuntetesTipus.Eletfogytiglan;
 
-            var rabObj = new Rab(rid, rnev, n, bt, Allapot.Elo, b, null);
+            var rabObj = new Rab(rid, rnev, n, bt, Allapot.Elo, b, null!);
 
             try
             {
