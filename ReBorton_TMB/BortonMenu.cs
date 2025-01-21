@@ -1,4 +1,5 @@
-﻿using Borton_Lib.Classes;
+﻿// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
+using Borton_Lib.Classes;
 using Borton_Lib.Enums;
 using Borton_Lib.Exceptions;
 
@@ -636,3 +637,4 @@ namespace ReBorton_TMB
         #endregion
     }
 }
+// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/

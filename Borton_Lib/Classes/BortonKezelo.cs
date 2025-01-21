@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
+using System.Text.Json;
 
 namespace Borton_Lib.Classes
 {
@@ -262,3 +263,4 @@ namespace Borton_Lib.Classes
 
     #endregion
 }
+// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/

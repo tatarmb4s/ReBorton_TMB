@@ -1,4 +1,5 @@
-﻿namespace Borton_Lib.Classes
+﻿// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
+namespace Borton_Lib.Classes
 {
     /// <summary>
     /// Egy börtön, aminek van neve, tulajdonosa,
@@ -92,3 +93,4 @@
         }
     }
 }
+// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/

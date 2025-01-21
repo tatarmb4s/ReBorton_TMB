@@ -1,4 +1,5 @@
-﻿using Borton_Lib.Enums;
+﻿// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
+using Borton_Lib.Enums;
 using Borton_Lib.Interfaces;
 
 namespace Borton_Lib.Classes
@@ -37,3 +38,4 @@ namespace Borton_Lib.Classes
         }
     }
 }
+// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/

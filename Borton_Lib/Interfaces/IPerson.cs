@@ -1,4 +1,5 @@
-﻿using Borton_Lib.Enums;
+﻿// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
+using Borton_Lib.Enums;
 
 namespace Borton_Lib.Interfaces
 {
@@ -23,3 +24,4 @@ namespace Borton_Lib.Interfaces
         Neme Neme { get; }
     }
 }
+// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/

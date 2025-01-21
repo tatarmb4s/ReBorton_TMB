@@ -1,4 +1,5 @@
-﻿using Borton_Lib.Enums;
+﻿// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
+using Borton_Lib.Enums;
 using Borton_Lib.Interfaces;
 using Borton_Lib.Exceptions;
 
@@ -138,3 +139,4 @@ namespace Borton_Lib.Classes
         }
     }
 }
+// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/

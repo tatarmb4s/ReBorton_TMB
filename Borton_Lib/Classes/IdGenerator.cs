@@ -1,4 +1,5 @@
-﻿namespace Borton_Lib.Classes
+﻿// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
+namespace Borton_Lib.Classes
 {
     /// <summary>
     /// Egyszerű statikus ID-generátor.
@@ -33,3 +34,4 @@
         }
     }
 }
+// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/

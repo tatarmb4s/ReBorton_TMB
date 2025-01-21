@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
+using System.Text.Json;
 using Borton_Lib.Classes;
 
 
@@ -60,3 +61,4 @@ namespace ReBorton_TMB.IO
         }
     }
 }
+// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/

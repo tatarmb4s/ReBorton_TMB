@@ -1,4 +1,5 @@
-﻿namespace Borton_Lib.Exceptions
+﻿// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
+namespace Borton_Lib.Exceptions
 {
     /// <summary>
     /// A börtön logikában fellépő kivételekhez használt egyedi kivétel
@@ -24,3 +25,4 @@
         public BortonException(string message, Exception innerException) : base(message, innerException) { }
     }
 }
+// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/

@@ -1,4 +1,5 @@
-﻿using Borton_Lib.Classes;
+﻿// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
+using Borton_Lib.Classes;
 using ReBorton_TMB;
 
 Console.Title = "Börtönkezelő TMB (KonZol)";
@@ -19,3 +20,4 @@ menu.Run();
 // A program sose fusson hibára, mindent try-catch-csel kezelünk a menü oldalon
 // Tehát kilépés
 Console.WriteLine("Kilépés...");
+// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/

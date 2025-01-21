@@ -1,4 +1,5 @@
-﻿namespace Borton_Lib.Enums
+﻿// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
+namespace Borton_Lib.Enums
 {
     /// <summary>
     /// A rab állapota (él vagy halott)
@@ -16,3 +17,4 @@
         Halott
     }
 }
+// Copyright: 2025 Tatár Mátyás Bence - https://tatarmb.hu/
