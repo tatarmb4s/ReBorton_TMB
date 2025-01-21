@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Borton_Lib\Borton_Lib.csproj" />
+  </ItemGroup>
+
 </Project>
